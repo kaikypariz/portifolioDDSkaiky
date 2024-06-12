@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://cdn-imgix.headout.com/media/images/c90f7eb7a5825e6f5e57a5a62d05399c-25058-BestofParis-EiffelTower-Cruise-Louvre-002.jpg'); /* Substitua 'caminho/para/sua/imagem-da-torre-eiffel.jpg' pela URL ou caminho local da sua imagem */
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.5); /* Adicionando uma camada semi-transparente para melhorar a legibilidade do texto */
+            color: #ffffff;
+            padding: 1rem 0;
+            text-align: center;
+            animation: fadeInDown 1s ease;
+        }
+        nav {
+            background: rgba(0, 0, 0, 0.5); /* Adicionando uma camada semi-transparente para melhorar a legibilidade do texto */
+            color: #fff;
+            padding: 0.5rem 0;
+            animation: fadeInLeft 1s ease;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 0.5rem;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        section {
+            margin: 2rem 0;
+            animation: fadeInUp 1s ease;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.5); /* Adicionando uma camada semi-transparente para melhorar a legibilidade do texto */
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.5); /* Adicionando uma camada semi-transparente para melhorar a legibilidade do texto */
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            animation: fadeInUp 1s ease;
+        }
+        #instagram{
+            margin-bottom: 10em;
+        }
+        .sobre-mim{
+            color: white;
+            font-size: 30px; /* Tamanho da fonte */
+            font-weight: bold; /* Peso da fonte */
+            color: #ffffff; /* Cor do texto */
+            -webkit-text-stroke: 1px black; /* Tamanho e cor da borda das letras para navegadores baseados em Webkit */
+            
+        }
+        .projetos{
+            color: white;
+            font-size: 30px; /* Tamanho da fonte */
+            font-weight: bold; /* Peso da fonte */
+            color: #ffffff; /* Cor do texto */
+            -webkit-text-stroke: 1px black; /* Tamanho e cor da borda das letras para navegadores baseados em Webkit */
+            
+        }
+        .habilidades{
+            color: white;
+            font-size: 30px; /* Tamanho da fonte */
+            font-weight: bold; /* Peso da fonte */
+            color: #ffffff; /* Cor do texto */
+            -webkit-text-stroke: 1px black; /* Tamanho e cor da borda das letras para navegadores baseados em Webkit */
+            
+        }
+        .contato{
+            color: white;
+            font-size: 30px; /* Tamanho da fonte */
+            font-weight: bold; /* Peso da fonte */
+            color: #ffffff; /* Cor do texto */
+            -webkit-text-stroke: 1px black; /* Tamanho e cor da borda das letras para navegadores baseados em Webkit */
+            
+        }
+        .insta{
+            color: white;
+            font-size: 30px; /* Tamanho da fonte */
+            font-weight: bold; /* Peso da fonte */
+            color: #ffffff; /* Cor do texto */
+            -webkit-text-stroke: 1px black; /* Tamanho e cor da borda das letras para navegadores baseados em Webkit */
+            
+        }
+        
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Estilo para o card do Instagram */
+        #instagram .card {
+            background: rgba(255, 255, 255, 0.5); /* Adicionando uma camada semi-transparente para melhorar a legibilidade do texto */
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        #instagram .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><em>Kaiky Silva Pariz</em></h1>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#sobre"><i class="fas fa-user"></i> Sobre</a></li>
+                <li><a href="#projetos"><i class="fas fa-laptop-code"></i> Projetos</a></li>
+                <li><a href="#habilidades"><i class="fas fa-code"></i> Habilidades</a></li>
+                <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
+                <li><a href="#instagram"><i class="fab fa-instagram"></i> Instagram</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <section id="sobre">
+            <h2 class="sobre-mim">Sobre</h2>
+            <div class="card">
+                <p>Olá! Eu sou o Kaiky Silva Pariz, um desenvolvedor backend apaixonado por criar soluções inovadoras e eficientes. Tenho experiência em C#, Python e um pouco de Sql e adoro trabalhar em projetos desafiadores.</p>
+            </div>
+        </section>
+        <section id="projetos">
+            <h2 class="projetos">Projetos</h2>
+            <div class="card">
+                <h3>Jogo da velha em Python</h3>
+                <p>Um projeto em python com uma formatação adequada para um jogo da velha, com funcionalidades criativas de jogo.</p>
+            </div>
+            <div class="card">
+                <h3>CRUD em C# para cadastros em uma escola</h3>
+                <p>CRUD com funcionalidades de cadastros de clientes, cadastros de usuarios no sistema e cadastros de alunos; sistema com integração de janelas MDI, com atalhos nos botões, e também interface amigável.</p>
+            </div>
+            <!-- Adicione mais projetos conforme necessário -->
+        </section>
+        <section id="habilidades">
+            <h2 class="habilidades">Habilidades</h2>
+            <div class="card">
+                <ul>
+                    <li>Conhecimento em C#</li>
+                    <li>Conhecimento em Python</li>
+                    <li>Conhecimento prévio em Sql</li>
+                    <li>Conhecimento prévio em Html/Css</li>
+                    <li>Habilidade em resolução de problemas utilizando lógica de programação</li>
+                    <!-- Adicione mais habilidades conforme necessário -->
+                </ul>
+            </div>
+        </section>
+        <section id="contato">
+            <h2 class="contato">Contato</h2>
+            <div class="card">
+                <p>Entre em contato comigo através do email: <a href="mailto:kaikypariz4@gmail.com">kaikypariz4@gmail.com</a></p>
+            </div>
+        </section>
+        <!-- Seção do Instagram -->
+        <section id="instagram">
+            <h2 class="insta">Instagram</h2>
+            <div class="card">
+                <p>Siga-me no Instagram: <a href="https://www.instagram.com/kaikypariz?igsh=eHV6ZnhzOWZrbGZu&utm_source=qr">@kaikypariz</a></p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Kaiky Silva Pariz. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
